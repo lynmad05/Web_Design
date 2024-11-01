@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<form id="formulario" action="#" method="post" enctype="multipart/form-data" onsubmit="return validarFormulario()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" pattern="[A-Za-z ]+" required><br><br>
+  
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" name="apellido" pattern="[A-Za-z ]+" required><br><br>
+  
+  <label for="contrasena">Contraseña:</label>
+  <input type="password" id="contrasena" name="contrasena" required><br><br>
+  
+  <label for="curriculum">Adjunta Curriculum:</label>
+  <input type="file" id="curriculum" name="curriculum" accept=".pdf,.docx" required><br><br>
+  
+  <label for="estadoCivil">Estado Civil:</label>
+  <input type="radio" id="soltero" name="estadoCivil" value="soltero" checked>
+  <label for="soltero">Soltero</label>
+  <input type="radio" id="casado" name="estadoCivil" value="casado">
+  <label for="casado">Casado</label><br><br>
+  
+  <label for="sexo">Sexo:</label>
+  <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+  <label for="masculino">masculino</label>
+  <input type="radio" id="femenino" name="sexo" value="femenino">
+  <label for="femenino">femenino</label><br><br>
+  
+  <label for="estudios">Estudios Realizados:</label>
+  <input type="checkbox" id="primaria" name="estudios Realizados" value="primaria" checked>
+  <label for="primaria">Primaria</label>
+  <input type="checkbox" id="secundaria" name="estudios Realizados" value="secundaria">
+  <label for="secundaria">Secundaria</label>
+  <input type="checkbox" id="superior" name="estudios Realizados" value="superior">
+  <label for="superior">Superior</label><br><br>
+  
+  <label for="distrito">Distrito de Residencia:</label>
+  <select id="distrito" name="distrito">
+    <option value="distrito0">Elija un distrito</option>
+    <option value="distrito1">La Perla</option>
+    <option value="distrito2">Bellavista</option>
+    <option value="distrito3">Carmen de la Legua</option>
+    <option value="distrito4">Ventanilla</option>
+    <option value="distrito5">Mi Peru </option>
+    <option value="distrito6">San Juan de Miraflores</option>
+    <option value="distrito7">Puente Piedra</option>
+    <option value="distrito8">Olivos</option>
+    <option value="distrito9">San Juan de Lurigancho</option>
+    <option value="distrito10">Carabayllo</option>
+  </select><br><br>
+  
+  <label for="software">Software que domina (seleccione varias opciones):</label><br>
+<div style="overflow-y: scroll; height: 100px;">
+    <input type="checkbox" id="software1" name="software" value="javascript">
+    <label for="software1">JavaScript</label><br>
+    
+    <input type="checkbox" id="software2" name="software" value="flash">
+    <label for="software2">Flash</label><br>
+    
+    <input type="checkbox" id="software3" name="software" value="Windows Xp">
+    <label for="software3">Windows Xp</label><br>
+    
+    <input type="checkbox" id="software4" name="software" value="Windows vista">
+    <label for="software4">Windows Vista</label><br>
+    
+    <input type="checkbox" id="software5" name="software" value="python">
+    <label for="software5">Python</label><br>
+    
+    <input type="checkbox" id="software6" name="software" value="Unity">
+    <label for="software6">Unity</label><br>
+    
+    <input type="checkbox" id="software7" name="software" value="HTML5">
+    <label for="software7">HTML5</label><br>
+    
+    <input type="checkbox" id="software8" name="software" value="C#">
+    <label for="software8">C#</label><br>
+</div>
+
+  <br>
+  <label for="comentarios">Comentarios:</label><br>
+  <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+  
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Borrar">
+
+</form>
+</body>
+</html>  
